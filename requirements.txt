@@ -1,0 +1,9 @@
+colored
+configargparse
+flask
+flask_restful
+marshmallow
+pytest
+pytest-cov
+snapshottest
+rfc3339
