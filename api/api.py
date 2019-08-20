@@ -280,8 +280,8 @@ def log_request(response):
 
 
 if __name__ == "__main__":
-    # p = configargparse.ArgParser()
-    # p.add('-d', '--debug', help='Debug flag', required=False, env_var='DEBUG')  # this option can be set in a config file because it starts with '--'
-    # options = p.parse_args()
-    # debug = options.debug
-    app.run(debug=True, port=5000)
+    p = configargparse.ArgParser()
+    p.add('-d', '--debug', help='Debug flag', required=False, env_var='DEBUG')  # this option can be set in a config file because it starts with '--'
+    options = p.parse_args()
+    debug = options.debug
+    app.run(debug=debug, port=5000)
