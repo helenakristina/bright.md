@@ -24,7 +24,7 @@
 
 - ensure virtual environment is Python 3.7+
 - install requirements `pip install -r requirements.txt`
-- export PYTHONPATH=./
+- `export PYTHONPATH=./`
 - run application `make run`
 - run in debug mode `make debug`
 - run tests `make test`
