@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "11c38dec-28aa-4186-a6fb-05274fc67124",
+		"name": "bright.md",
+		"description": "This is a postman collection to do a series of operations on code challenge.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Jones\",\n    \"zip_code\": \"98683\",\n    \"email_address\": \"jack@jones.biz\"\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/user/123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create users",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Jones\",\n    \"zip_code\": \"98683\",\n    \"email_address\": \"jack@jones.biz\"\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/user/123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": 123,\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Johnson\",\n    \"zip_code\": \"98683\",\n    \"email_address\": \"jack@jones.biz\"\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/user/123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": 123,\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Johnson\",\n    \"zip_code\": \"98683\",\n    \"email_address\": \"jack@jones.biz\"\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/user/123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": 123,\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Jones\",\n    \"zip_code\": \"98683\",\n    \"email_address\": \"jack@jones.biz\"\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete users",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": 123,\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Jones\",\n    \"zip_code\": \"98683\",\n    \"email_address\": \"jack@jones.biz\"\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/user/123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/user/123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
