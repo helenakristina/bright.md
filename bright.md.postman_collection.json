@@ -22,7 +22,7 @@
 					"raw": "{\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Jones\",\n    \"zip_code\": \"98683\",\n    \"email_address\": \"jack@jones.biz\"\n}\n"
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/user/123",
+					"raw": "http://127.0.0.1:5000/user/1234",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -33,7 +33,7 @@
 					"port": "5000",
 					"path": [
 						"user",
-						"123"
+						"1234"
 					]
 				}
 			},
@@ -46,16 +46,16 @@
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Jones\",\n    \"zip_code\": \"98683\",\n    \"email_address\": \"jack@jones.biz\"\n}\n"
+					"raw": "[{\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Jones\",\n    \"zip_code\": \"98683\",\n    \"email_address\": \"jack@jones.biz\", \n    \"user_id\":1234\n},\n{\n    \"first_name\": \"Jessica\",\n    \"last_name\": \"Jeffries\",\n    \"zip_code\": \"99723\",\n    \"email_address\": \"jessica@jeffries.us\",\n    \"user_id\":5678\n\t\n}]\n"
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/user/123",
+					"raw": "http://127.0.0.1:5000/users",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -65,8 +65,7 @@
 					],
 					"port": "5000",
 					"path": [
-						"user",
-						"123"
+						"users"
 					]
 				}
 			},
@@ -85,7 +84,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"user_id\": 123,\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Johnson\",\n    \"zip_code\": \"98683\",\n    \"email_address\": \"jack@jones.biz\"\n}\n"
+					"raw": "{\n    \"last_name\": \"Johnson\",\n    \"email_address\": \"jack@johnson.biz\"\n}\n"
 				},
 				"url": {
 					"raw": "http://127.0.0.1:5000/user/123",
@@ -112,16 +111,16 @@
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"user_id\": 123,\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Johnson\",\n    \"zip_code\": \"98683\",\n    \"email_address\": \"jack@jones.biz\"\n}\n"
+					"raw": "[{\n    \"user_id\": 1234,\n    \"first_name\": \"Jack\"\n},\n{\n    \"user_id\": 5678,\n    \"email_address\": \"jess@jeffries.us\"\n},\n{\n    \"user_id\": 890,\n    \"first_name\": \"Leila\"\n},\n{\n\t\"first_name\":\"Tori\"\n}\n]\n\n"
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/user/123",
+					"raw": "http://127.0.0.1:5000/users",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -131,8 +130,7 @@
 					],
 					"port": "5000",
 					"path": [
-						"user",
-						"123"
+						"users"
 					]
 				}
 			},
@@ -154,7 +152,7 @@
 					"raw": "{\n    \"user_id\": 123,\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Jones\",\n    \"zip_code\": \"98683\",\n    \"email_address\": \"jack@jones.biz\"\n}\n"
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/123",
+					"raw": "http://127.0.0.1:5000/user/123",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -164,6 +162,7 @@
 					],
 					"port": "5000",
 					"path": [
+						"user",
 						"123"
 					]
 				}
@@ -183,10 +182,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"user_id\": 123,\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Jones\",\n    \"zip_code\": \"98683\",\n    \"email_address\": \"jack@jones.biz\"\n}\n"
+					"raw": "[1234,\n5987]"
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/123",
+					"raw": "http://127.0.0.1:5000/users",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -196,7 +195,7 @@
 					],
 					"port": "5000",
 					"path": [
-						"123"
+						"users"
 					]
 				}
 			},
@@ -221,7 +220,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/user/123",
+					"raw": "http://127.0.0.1:5000/user/1234",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -232,7 +231,7 @@
 					"port": "5000",
 					"path": [
 						"user",
-						"123"
+						"1234"
 					]
 				}
 			},
@@ -257,7 +256,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/user/123",
+					"raw": "http://127.0.0.1:5000/users?user_id=1234&user_id=123",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -267,8 +266,17 @@
 					],
 					"port": "5000",
 					"path": [
-						"user",
-						"123"
+						"users"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1234"
+						},
+						{
+							"key": "user_id",
+							"value": "123"
+						}
 					]
 				}
 			},
